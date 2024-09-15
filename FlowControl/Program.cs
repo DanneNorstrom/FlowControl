@@ -11,7 +11,8 @@
                 Console.WriteLine("0 = Avsluta");
                 Console.WriteLine("1 = Biljettpriser");
                 Console.WriteLine("2 = Räkna ut totalkostnad");
-                Console.WriteLine("3 = Upprepa input 10 gånger");
+                Console.WriteLine("3 = Upprepa angiven input 10 gånger");
+                Console.WriteLine("4 = Det tredje ordet");
 
                 string input = Console.ReadLine();
 
@@ -81,6 +82,12 @@
 
                         Console.WriteLine();
 
+                    break;
+                        case "4":
+                        Console.WriteLine("Ange text: (Minst 3 ord och mellanslag mellan orden)");
+                        string s2 = Console.ReadLine();
+                        var words = s2.Split(" ");
+                        Console.WriteLine("Det tredje ordet i inmatat text är " + words[2]);
                     break;
 
                     default:
