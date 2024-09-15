@@ -11,6 +11,7 @@
                 Console.WriteLine("0 = Avsluta");
                 Console.WriteLine("1 = Biljettpriser");
                 Console.WriteLine("2 = Räkna ut totalkostnad");
+                Console.WriteLine("3 = Upprepa input 10 gånger");
 
                 string input = Console.ReadLine();
 
@@ -68,6 +69,18 @@
                          
                         Console.WriteLine("Antal personer = " + n);
                         Console.WriteLine("Totalkostnad = " + totalSum + "kr");
+                    break;
+
+                    case "3":
+                        Console.WriteLine("Ange text:");
+                        string s = Console.ReadLine();
+                        for (int c = 0; c < 10; c++)
+                        {
+                            Console.Write(s + " ");
+                        }
+
+                        Console.WriteLine();
+
                     break;
 
                     default:
